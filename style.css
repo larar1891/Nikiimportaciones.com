@@ -116,6 +116,7 @@ body.sin-scroll {
     transition: transform 0.5s ease-in-out;
     text-align: center;
     text-decoration: none;
+    font-weight: bold;
 }
 
 .botonCatalogo:hover {
