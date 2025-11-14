@@ -5,62 +5,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Niki Importaciones</title>
+
+    <!-- Estilos -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="media.css">
 </head>
 
-<script>
-function toggleMenu() {
-    const menu = document.querySelector('.menu ul');
-    menu.classList.toggle('activo');
-}
-document.querySelectorAll('.menu ul li').forEach(item => {
-    item.addEventListener('click', () => {
-        document.querySelector('.menu ul').classList.remove('activo');
-    });
-});
-</script>
-
 <body class="sin-scroll">
 
-   <header class="cabezal">
-    <a href="index.html">Niki Importaciones</a>
+    <!-- ENCABEZADO -->
+    <header class="cabezal">
+        <a href="index.html">Niki Importaciones</a>
 
-    <nav class="menu">
-    
-        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-        <ul>
-            <li onclick="alert('Contacto')">Contacto</li>
-            <li onclick="alert('Sobre nosotros')">Sobre nosotros</li>
-            <li onclick="alert('Iniciar sesión / Registrarse')">Iniciar sesión / Registrarse</li>
-        </ul> 
-    </nav>
-</header>
+        <nav class="menu">
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
 
-    </header>
-   <main class="principal">
-    <div class="cajaImagen">
-        <img src="./perfumes.png" alt="Imagen de perfumes">
-    </div>
-
-    <div class="cajaPrincipalCatalogo">
-        <div class="cajaCatalogo">
-            <img src="./logo2.0.png" alt="Logo">
-            <p>Perfumes originales & exclusivos</p>
-            <a href="catalogo.html" class="botonCatalogo">Catálogo</a>
-                Catálogo
-            </a>
-        </div>
-    </div>
-</main>
-
-        <div class="cajaRedes">
             <ul>
-                <li>
-                     <a href="https://www.instagram.com/niki_importacionesuy/" target="_blank" rel="noopener noreferrer">
-    <svg fill="#C18F96" viewBox="-143 145 512 512" xmlns="http://www.w3.org/2000/svg">
-                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <li onclick="alert('Contacto')">Contacto</li>
+                <li onclick="alert('Sobre nosotros')">Sobre nosotros</li>
+                <li onclick="alert('Iniciar sesión / Registrarse')">Iniciar sesión / Registrarse</li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="principal">
+        <div class="cajaImagen">
+            <img src="./perfumes.png" alt="Imagen de perfumes">
+        </div>
+
+        <div class="cajaPrincipalCatalogo">
+            <div class="cajaCatalogo">
+                <img src="./logo2.0.png" alt="Logo">
+                <p>Perfumes originales & exclusivos</p>
+
+                <a href="catalogo.html" class="botonCatalogo">Catálogo</a>
+            </div>
+        </div>
+    </main>
+
+    <div class="cajaRedes">
+        <ul>
+            <li>
+                <a href="https://www.instagram.com/niki_importacionesuy/" target="_blank" rel="noopener noreferrer">
+                    <svg fill="#C18F96" viewBox="-143 145 512 512" xmlns="http://www.w3.org/2000/svg">
                         <g id="SVGRepo_iconCarrier">
                             <g>
                                 <path
@@ -77,10 +64,25 @@ document.querySelectorAll('.menu ul li').forEach(item => {
                             </g>
                         </g>
                     </svg>
-                </li>
-            </ul>
-        </div>
-    </main>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- SCRIPT DEL MENÚ -->
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.menu ul');
+            menu.classList.toggle('activo');
+        }
+
+        document.querySelectorAll('.menu ul li').forEach(item => {
+            item.addEventListener('click', () => {
+                document.querySelector('.menu ul').classList.remove('activo');
+            });
+        });
+    </script>
+
 </body>
 
 </html>
