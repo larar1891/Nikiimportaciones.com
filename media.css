@@ -53,3 +53,51 @@
 .producto {
     min-width: 90px;
 }
+
+/* ===========================
+   TABLET EN VERTICAL
+   =========================== */
+@media screen and (min-width: 769px) and (max-width: 1024px) and (orientation: portrait) {
+
+   
+    .principal {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .cajaImagen {
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    .principal .cajaImagen img {
+        width: 100% !important;
+        height: auto !important;
+        object-fit: contain !important;
+    }
+
+    .cajaPrincipalCatalogo {
+        width: 100% !important;
+        height: auto !important;
+        padding: 24px 16px !important;
+    }
+
+    .cajaPrincipalCatalogo .cajaCatalogo img {
+        width: 200px !important;
+        height: auto !important;
+        margin-bottom: 16px;
+    }
+
+    /* Catálogo: solo 2 columnas en vertical */
+    .grillaCatalogo {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 20px !important;
+        padding: 10px 8px;
+    }
+
+    .producto {
+        max-width: 320px !important;
+        margin: 0 auto;
+    }
+}

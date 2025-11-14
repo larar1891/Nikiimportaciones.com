@@ -404,3 +404,28 @@ h1, h2, h3 {
     display: block;
     margin: 0 auto 15px;   /* centrado con un poco de espacio abajo */
 }
+
+/* Tamaño base (celulares) */
+.textoInicio {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.4;
+    text-align: center;
+    margin-bottom: 8px;
+    color: #541417;
+}
+
+/* Tablets */
+@media screen and (min-width: 600px) {
+    .textoInicio {
+        font-size: 16px;
+    }
+}
+
+/* Computadoras */
+@media screen and (min-width: 992px) {
+    .textoInicio {
+        font-size: 18px;
+    }
+}
+
